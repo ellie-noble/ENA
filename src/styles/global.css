@@ -88,14 +88,23 @@ h1 {
     display: block;
 
 }
-/* desktop nav styles */ 
 
 @media screen and (max-width: 637px) {
   .header-container-desktop {
     display: none;}
   }
 
+/* desktop nav styles */ 
+
 @media screen and (min-width: 636px) {
+  .header-container-desktop {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .nav-meta-links-desktop {
     margin-left: 5em;
     display: block;
