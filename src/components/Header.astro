@@ -2,6 +2,7 @@
 import Navigation from './Navigation.astro';
 import Menu from './Menu.astro';
 import LogoLink from './LogoLink.astro';
+import DesktopNavigation from './DesktopNavigation.astro'
 ---
 
 <header>
@@ -12,6 +13,10 @@ import LogoLink from './LogoLink.astro';
         </div>    
         <div><Navigation /></div>
      
+        <div class="header-container-desktop">
+            <div><LogoLink /></div>
+            <div><DesktopNavigation /></div>
+        </div>
         
     </nav>
 </header>

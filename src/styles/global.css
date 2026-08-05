@@ -88,10 +88,15 @@ h1 {
     display: block;
 
 }
+/* desktop nav styles */ 
 
+@media screen and (max-width: 637px) {
+  .header-container-desktop {
+    display: none;}
+  }
 
 @media screen and (min-width: 636px) {
-  .nav-links {
+  .nav-meta-links-desktop {
     margin-left: 5em;
     display: block;
     position: static;
@@ -99,12 +104,12 @@ h1 {
     background: none;
   }
 
-  .nav-links a {
+  .nav-meta-links-desktop a {
     display: inline-block;
     padding: 15px 20px;
   }
 
-  .menu {
-    display: none;
+  .header-container-mobile{
+    display:none;
   }
 }
