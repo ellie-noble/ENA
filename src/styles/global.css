@@ -19,7 +19,7 @@ html {
 body {
   margin: 0 auto;
   width: 100%;
-  max-width: 80ch;
+  max-width: 120ch;
   padding: 1rem;
   line-height: 1.5;
 }
@@ -117,7 +117,7 @@ h1 {
   text-align: center;
   padding: 10px 0;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #000000;
