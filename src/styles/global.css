@@ -105,6 +105,31 @@ h1 {
     justify-content: space-between;
   }
 
+  
+  .nav-meta-links-desktop {
+  width: 100%;
+  display: none;
+  margin: 0;
+}
+
+.nav-meta-links-desktop a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.nav-meta-links-desktop a:hover,
+.nav-meta-links-desktop a:focus {
+  color: #d52bd3;
+  text-decoration: underline;
+}
+  
+  
   .nav-meta-links-desktop {
     margin-left: 5em;
     display: block;
