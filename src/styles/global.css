@@ -1,0 +1,110 @@
+@import url(https://db.onlinewebfonts.com/c/3c52c9c0438de361b83ad61c5fbe2155?family=OCR-B+10+Pitch+BT); 
+
+
+html {
+  background-color: #ffffff;
+  font-family: "OCR-B 10 Pitch BT";
+}
+
+@font-face {
+    font-family: "OCR-B 10 Pitch BT";
+    src: url("https://db.onlinewebfonts.com/t/3c52c9c0438de361b83ad61c5fbe2155.eot");
+    src: url("https://db.onlinewebfonts.com/t/3c52c9c0438de361b83ad61c5fbe2155.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/3c52c9c0438de361b83ad61c5fbe2155.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/3c52c9c0438de361b83ad61c5fbe2155.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/3c52c9c0438de361b83ad61c5fbe2155.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/3c52c9c0438de361b83ad61c5fbe2155.svg#OCR-B 10 Pitch BT")format("svg");
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80ch;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+
+/* nav styles */
+
+.header-container-mobile {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container-mobile div {
+    margin:0px;
+    padding:0px;
+}
+
+.logo-link {
+    max-width: 100%;
+}
+
+.menu {
+  border: none;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0px 0px;
+}
+
+.nav-links-mobile {
+  width: 100%;
+  display: none;
+  margin: 0;
+}
+
+.nav-links-mobile a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.nav-links-mobile a:hover,
+.nav-links-mobile a:focus {
+  color: #d52bd3;
+  text-decoration: underline;
+}
+
+:has(.menu[aria-expanded="true"]) .nav-links-mobile {
+    display: block;
+
+}
+
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+}
