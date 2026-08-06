@@ -57,7 +57,7 @@ h1 {
   background-color: #ffffff;
   color: #000000;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: normal;
   padding: 0px 0px;
 }
 
@@ -73,7 +73,7 @@ h1 {
   padding: 10px 0;
   text-decoration: none;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: normal;
   text-transform: uppercase;
   color: #000000;
 }
@@ -106,19 +106,21 @@ h1 {
   }
 
   
-  .nav-meta-links-desktop {
+.nav-meta-links-desktop {
   width: 100%;
-  display: none;
-  margin: 0;
+  margin:0;
+  display: block;
+  position: static;
+  background: none;
 }
 
 .nav-meta-links-desktop a {
-  display: block;
+  display: inline-block;
   text-align: center;
-  padding: 10px 0;
+  padding: 25px;
   text-decoration: none;
   font-size: 1.1rem;
-  font-weight: bold;
+  font-weight: normal;
   text-transform: uppercase;
   color: #000000;
 }
@@ -128,22 +130,8 @@ h1 {
   color: #d52bd3;
   text-decoration: underline;
 }
-  
-  
-  .nav-meta-links-desktop {
-    margin-left: 5em;
-    display: block;
-    position: static;
-    width: auto;
-    background: none;
-  }
 
-  .nav-meta-links-desktop a {
-    display: inline-block;
-    padding: 15px 20px;
-  }
-
-  .header-container-mobile{
+.header-container-mobile{
     display:none;
   }
 }
