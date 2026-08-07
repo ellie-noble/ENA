@@ -1,7 +1,11 @@
 ---
+import { Image } from 'astro:assets';
+import myImage from '../assets/test-mail-icon.jpg';
+
 ---
 <div id="top-bar-desktop" class="nav-meta-links-desktop">
     <a href="/work/">Work</a>
     <a href="/blog/">Blog</a>
+    <a href="/mail/"><Image src={myImage} alt="Mail" style="width:33px;height:23px;" /></a>
 </div>
 

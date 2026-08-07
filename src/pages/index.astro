@@ -2,6 +2,10 @@
 import "../styles/global.css";
 import Header from '../components/Header.astro';
 
+import { Image } from 'astro:assets';
+import teddyIssues from '../assets/teddy-issues-splash.jpg'
+
+
 const pageTitle = "Home";
 ---
 
@@ -16,11 +20,11 @@ const pageTitle = "Home";
 	</head>
 	<body>
 		<Header />
+		<div id="splash" class= "splash-container">
+			<Image src= {teddyIssues} alt="bedtime" />
+		</div>
 		<h1>{pageTitle}</h1>
 		<p>Ellie Noble has been posting art on the internet since 2001. But this is fairly new and difficult!</p>
-
-		<p><img src="../images/bedtime-ellie-noble.jpg" alt="bedtime">
-		</p>
 
 		<script>
 			const menu = document.querySelector('.menu');
