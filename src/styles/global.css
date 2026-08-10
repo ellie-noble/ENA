@@ -59,8 +59,7 @@ h1 {
 
 .menu {
   border: none;
-  background-color: #ffffff;
-  color: #000000;
+  background-color:#ffffff;
   font-size: 1.2rem;
   font-weight: normal;
   padding: 0px 0px;
@@ -94,6 +93,7 @@ h1 {
 
 }
 
+
 @media screen and (max-width: 637px) {
   .header-container-desktop {
     display: none;}
@@ -109,6 +109,7 @@ h1 {
     align-items: end;
     justify-content: space-between;
     background-color: none;
+    white-space: nowrap;
   }
 
 .logo-link {
@@ -161,7 +162,6 @@ h1 {
 .splash-container {
     max-width: 100%;
 }
-
 
 .splash-container img {
     max-width: 100%;
