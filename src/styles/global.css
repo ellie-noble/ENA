@@ -18,20 +18,30 @@ html {
 }
 
 body {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 131ch;
-  padding: 1rem;
+  margin: 0;
   line-height: 1.5;
+  font-size: 0.96rem;
   opacity: 0;
   animation: fadeIn 2s forwards;
 }
+
 
 @keyframes fadeIn {
   to {
     opacity: 1;
       }
 }
+
+@media (min-width: 636px) {
+  body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 125ch;
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+}
+
 
 * {
   box-sizing: border-box;
@@ -41,6 +51,7 @@ h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
 }
+
 
 /* nav styles */
 
@@ -53,7 +64,7 @@ h1 {
 }
 
 .header-container-mobile div {
-    margin:0px;
+    margin:0.4rem 0.4rem 0.2rem;
     padding:0px;
 }
 
@@ -196,4 +207,17 @@ h1 {
 .splash-container img {
     max-width: 100%;
     height: auto;
+}
+
+/* Content Styling */
+
+.content {
+  margin: 1rem;
+
+}
+
+@media (min-width: 636px) {
+.content {
+  margin: 0rem;
+}
 }

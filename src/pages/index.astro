@@ -3,7 +3,7 @@ import "../styles/global.css";
 import Header from '../components/Header.astro';
 
 import { Image } from 'astro:assets';
-import teddyIssues from '../assets/teddy-issues-splash.jpg'
+import teddyIssues from '../assets/teddy-issues-splash.jpg';
 
 
 const pageTitle = "Home";
@@ -21,11 +21,12 @@ const pageTitle = "Home";
 	<body>
 		<Header />
 		<div id="splash" class= "splash-container">
-			<Image src= {teddyIssues} alt="bedtime" />
+			<Image src= {teddyIssues} alt="'Teddy Issues' digital airbrush art by Ellie Noble" />
 		</div>
-		<h1>{pageTitle}</h1>
-		<p>Ellie Noble has been posting art on the internet since 2001. But this is fairly new and difficult!</p>
-
+		<div id="home" class="content">
+			<h1>{pageTitle}</h1>
+			<p>Ellie Noble has been posting art on the internet since 2001. But this is fairly new and difficult!</p>
+		</div>	
 		<script>
 			import "../scripts/menu.js";
 		</script>
