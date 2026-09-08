@@ -27,12 +27,7 @@ const pageTitle = "Home";
 		<p>Ellie Noble has been posting art on the internet since 2001. But this is fairly new and difficult!</p>
 
 		<script>
-			const menu = document.querySelector('.menu');
-
-			menu?.addEventListener('click', () => {
-				const isExpanded = menu.getAttribute('aria-expanded') === 'true';
-				menu.setAttribute ('aria-expanded', `${!isExpanded}`);
-			});
+			import "../scripts/menu.js";
 		</script>
 	</body>
 </html>

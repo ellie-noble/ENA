@@ -20,9 +20,17 @@ html {
 body {
   margin: 0 auto;
   width: 100%;
-  max-width: 132ch;
+  max-width: 131ch;
   padding: 1rem;
   line-height: 1.5;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+      }
 }
 
 * {
@@ -91,7 +99,19 @@ h1 {
 
 :has(.menu[aria-expanded="true"]) .nav-links-mobile {
     display: block;
+      opacity: 0;
+  animation: fadeIn 1s forwards;
 
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+      }
+}
+
+:has(.menu[aria-expanded="true"]) .splash-container {
+    display: none;
 }
 
 :has(.menu[aria-expanded="true"]) .burger-closed {
@@ -167,7 +187,7 @@ h1 {
   }
 }
 
-/* Splash Styling*/
+/* Splash Styling */
 
 .splash-container {
     max-width: 100%;
