@@ -200,6 +200,13 @@ h1 {
 
 /* Splash Styling */
 
+:has(.menu[aria-expanded="false"]) .splash-container img {
+    display: block;
+      opacity: 0;
+  animation: fadeIn 1s forwards;
+
+}
+
 .splash-container {
     max-width: 100%;
 }
