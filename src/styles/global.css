@@ -4,6 +4,7 @@
 html {
   background-color: #ffffff;
   font-family: "OCR-B 10 Pitch BT";
+  overflow-y: scroll;
 }
 
 @font-face {
@@ -93,6 +94,15 @@ h1 {
 
 }
 
+:has(.menu[aria-expanded="true"]) .burger-closed {
+    display: none;
+
+}
+
+:has(.menu[aria-expanded="false"]) .burger-open {
+    display: none;
+
+}
 
 @media screen and (max-width: 637px) {
   .header-container-desktop {

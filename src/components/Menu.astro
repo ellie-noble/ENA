@@ -1,9 +1,10 @@
 ---
 import { Image } from 'astro:assets';
 import myImage from '../assets/test-hamburger-200x181.jpg';
-
+import pinkBurger from '../assets/pink-hamburger-200x181.jpg';
 ---
 <button aria-expanded="false" aria-controls="main-menu-mobile" class="menu">
-    <Image src={myImage} alt="Menu" style="width:32px;height:30px;" />
+    <div class="burger-closed"><Image src={myImage} alt="Menu" style="width:32px;height:30px;" /></div>
+    <div class="burger-open"><Image src={pinkBurger} alt="Menu" style="width:32px;height:30px;" /></div>
 </button>
 
