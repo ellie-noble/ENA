@@ -297,3 +297,21 @@ h1 {
   margin: 0rem;
 }
 }
+
+/* Card Module Styling */
+
+.portfolio-cards {
+  display: grid;
+  margin-top: 2.5rem;
+  padding-left: 0;
+  padding-right: 0;
+  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+  
+  list-style:none;
+}
+
+.portfolio-cards img {
+  width: 100%;
+  height: auto;
+}

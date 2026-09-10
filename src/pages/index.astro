@@ -1,10 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Splash from '../components/Splash.astro';
+import FeaturedPortfolioModule from '../components/FeaturedPortfolioModule.astro'
+
 const pageTitle = "Home";
 ---
 <BaseLayout pageTitle={pageTitle} >
 	<Splash />
+	<FeaturedPortfolioModule />
 	<h2>Welcome to my website</h2>
 	<p>This is the first opening page like</p>
+	
 </BaseLayout>
