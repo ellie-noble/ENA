@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPortfolioLayout.astro
 title: 'Key to a Childlike Heart'
-pubDate: 2004-07-01
+pubDate: 2023-10-06
 description: 'Dreamy hand holding magic key'
 author: 'Ellie Noble'
 image:

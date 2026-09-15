@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPortfolioLayout.astro
 title: 'Velvet Box'
-pubDate: 2004-07-01
+pubDate: 20017-09-09
 description: 'The lengths we go to for desire, while avoiding the pain of human relations.'
 author: 'Ellie Noble'
 image:

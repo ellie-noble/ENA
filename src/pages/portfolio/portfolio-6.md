@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPortfolioLayout.astro
 title: 'Mechanical Bride'
-pubDate: 2004-07-01
+pubDate: 20024-03-21
 description: 'Test stop motion animation.'
 author: 'Ellie Noble'
 image:

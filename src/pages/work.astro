@@ -1,5 +1,6 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PortfolioPost from '../components/PortfolioPost.astro'; 
 const allPortfolio = Object.values(import.meta.glob('./portfolio/*.md', { eager: true }));
 const pageTitle = "Work";
 ---
@@ -9,7 +10,7 @@ const pageTitle = "Work";
 		<h1>{pageTitle}</h1>
         <p>This will be my work home gallery, to which everything else will link eventually (i hope!!)</p>
         <ul>
-          {allPortfolio.map((portfolio: any) => <li><a href={portfolio.url}>{portfolio.frontmatter.title}</a></li>)}
+          {allPortfolio.map((portfolio: any) => <PortfolioPost url={portfolio.url} title={portfolio.frontmatter.title} />)}
         </ul>
 		</div>
 </BaseLayout>
