@@ -9,6 +9,8 @@ image:
     alt: 'Blonde girl with heart shaped glasses and retro grey telephone'
 
 tags: ["self-portrait", "digital", "photoart"]
+medium: 'digital'
+submedium: 'photoart'
 ---
 # Telephone
 

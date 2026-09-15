@@ -11,5 +11,6 @@ image:
 tags: ["pastel", "still-life"]
 medium: 'digital'
 submedium: 'photography'
+featured: '4'
 ---
 elementary my dear. I have no more to say, I am a placeholder.

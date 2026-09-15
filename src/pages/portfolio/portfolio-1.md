@@ -10,6 +10,7 @@ image:
 tags: ["beauty", "illustration"]
 medium: 'digital'
 submedium: 'airbrush'
+featured: '1'
 ---
 A woman who is still a child inside
 

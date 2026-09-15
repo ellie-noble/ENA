@@ -10,5 +10,6 @@ image:
 tags: ["3d print", "experimental"]
 medium: 'hybrid'
 submedium: 'animation'
+featured: '2'
 ---
 A 3d printed doll charachter reflects on the fleeting nature of feminine allure.

@@ -8,6 +8,8 @@ image:
     url: 'https://litter.catbox.moe/rz6srs2l50eln6r0.jpg'
     alt: 'Wild-eyed girl in vintage mood bedroom'
 tags: ["self-portrait", "hybrid", "photoart"]
+medium: 'hybrid'
+submedium: 'photoart'
 ---
 This is the content of my post. When I was a teen, I was crazy. I am still unhinged.
 
