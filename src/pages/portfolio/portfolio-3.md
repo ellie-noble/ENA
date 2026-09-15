@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPortfolioLayout.astro
 title: 'Self Portrait with Telephone'
 pubDate: 2018-09-01
 description: 'Inspired by the airbush art of Syd Brak'

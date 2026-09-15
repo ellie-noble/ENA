@@ -1,14 +1,15 @@
 ---
-title: 'Velvet Box'
+layout: ../../layouts/MarkdownPortfolioLayout.astro
+title: 'Feminine Studies'
 pubDate: 2019-09-01
-description: 'A tale of isolation + desire'
+description: 'An image of a desk'
 author: 'Ellie Noble'
 image:
-    url: '../../images/telephone-ellie-noble.jpg'
-    alt: 'Girl at window with mysterious metal case'
+    url: 'https://litter.catbox.moe/sd2ajyoe4s2yb7uh.jpg'
+    alt: 'Cute desk with porcelain dog'
 
-tags: ["narrative", "erotic"]
+tags: ["pastel", "still-life"]
+medium: 'digital'
+submedium: 'photography'
 ---
-# Velvet Box
-
-A short story about the tribulations of getting ones needs met, whilst avoiding the human pain involved in relationships.
+elementary my dear. I have no more to say, I am a placeholder.

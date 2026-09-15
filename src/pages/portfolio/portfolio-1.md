@@ -1,14 +1,15 @@
 ---
-title: 'Boudoir Babydoll'
+layout: ../../layouts/MarkdownPortfolioLayout.astro
+title: 'Key to a Childlike Heart'
 pubDate: 2004-07-01
-description: 'Analogue + digital hybrid self portrait (aged 17)'
+description: 'Dreamy hand holding magic key'
 author: 'Ellie Noble'
 image:
-    url: '../../images/bedtime-ellie-noble.jpg'
-    alt: 'Wild-eyed girl in vintage mood bedroom'
-tags: ["self-portrait", "hybrid", "photoart"]
+    url: 'https://litter.catbox.moe/wsmqijir35eiqp6n.jpg'
+    alt: 'Light airbrush toned illustration with beautiful nails'
+tags: ["beauty", "illustration"]
+medium: 'digital'
+submedium: 'airbrush'
 ---
-# Boudoir Babydoll
-
-Published on: 2022-07-01
+A woman who is still a child inside
 
