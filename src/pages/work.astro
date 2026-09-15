@@ -10,7 +10,7 @@ const pageTitle = "Work";
 		<h1>{pageTitle}</h1>
         <p>This will be my work home gallery, to which everything else will link eventually (i hope!!)</p>
         <ul>
-          {allPortfolio.map((portfolio: any) => <PortfolioPost url={portfolio.url} title={portfolio.frontmatter.title} />)}
+          {allPortfolio.map((portfolio: any) => <PortfolioPost url={portfolio.url} title={portfolio.frontmatter.title} /> <image src={portfolio.frontmatter.imageUrl} width="300" alt={portfolio.frontmatter.imageAlt} />)}
         </ul>
 		</div>
 </BaseLayout>
