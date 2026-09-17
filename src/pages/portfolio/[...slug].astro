@@ -1,0 +1,18 @@
+---
+import { getCollection, render } from 'astro:content';
+import MarkdownPortfolioLayout from '../../layouts/MarkdownPortfolioLayout.astro';
+
+export async function getStaticPaths() {
+  const portfolio = await getCollection('portfolio');
+  return portfolio.map(portfolio => ({
+    params: { slug: portfolio.id }, props: { portfolio },
+  }));
+}
+
+const { portfolio } = Astro.props;
+const { Content } = await render(portfolio);
+---
+
+<MarkdownPortfolioLayout frontmatter={portfolio.data}>
+    <Content />
+</MarkdownPortfolioLayout>

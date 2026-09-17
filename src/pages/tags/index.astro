@@ -1,7 +1,9 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro'
-const allPortfolio = Object.values(import.meta.glob('../portfolio/*.md', { eager: true }));
-const tags = [...new Set(allPortfolio.map((portfolio: any) => portfolio.frontmatter.tags).flat())];
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from "astro:content";
+
+const allPortfolio = await getCollection("portfolio");
+const tags = [...new Set(allPortfolio.map((portfolio) => portfolio.data.tags).flat())];
 const pageTitle = 'Tag Index'
 
 ---

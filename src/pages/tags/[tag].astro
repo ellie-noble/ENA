@@ -1,14 +1,16 @@
 ---
+import { getCollection } from "astro:content";
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PortfolioPost from '../../components/PortfolioPost.astro';
 
 export async function getStaticPaths() {
-  const allPortfolio = Object.values(import.meta.glob('../portfolio/*.md', { eager: true }));
-
-  const uniqueTags = [...new Set(allPortfolio.map((portfolio: any) => portfolio.frontmatter.tags).flat())];
+  const allPortfolio = await getCollection("portfolio");
+  const uniqueTags = [...new Set(allPortfolio.map((portfolio) => portfolio.data.tags).flat())];
 
   return uniqueTags.map((tag) => {
-    const filteredPortfolio = allPortfolio.filter((post: any) => post.frontmatter.tags.includes(tag));
+    const filteredPortfolio = allPortfolio.filter((portfolio) => 
+      portfolio.data.tags.includes(tag)
+    );
     return {
       params: { tag },
       props: { portfolio: filteredPortfolio },
@@ -23,6 +25,6 @@ const { portfolio } = Astro.props;
 <BaseLayout pageTitle={tag}>
   <p>Work tagged with {tag}</p>
   <ul>
-    {portfolio.map((portfolio: any) => <PortfolioPost url={portfolio.url} title={portfolio.frontmatter.title} />)}
+    {portfolio.map((portfolio) => <PortfolioPost url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />)}
   </ul>
 </BaseLayout>

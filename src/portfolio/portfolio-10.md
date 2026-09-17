@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPortfolioLayout.astro
 title: 'Missing Things'
 pubDate: 2022-07-01
 description: 'Some stuff that doesnt exist yet'

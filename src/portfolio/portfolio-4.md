@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPortfolioLayout.astro
 title: 'Feminine Studies'
 pubDate: 2019-09-01
 description: 'An image of a desk'

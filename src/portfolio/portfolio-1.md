@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPortfolioLayout.astro
 title: 'Key to a Childlike Heart'
 pubDate: 2023-10-06
 description: 'Dreamy hand holding magic key'

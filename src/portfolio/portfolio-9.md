@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPortfolioLayout.astro
 title: 'Sweet Dreams'
 pubDate: 2022-07-01
 description: '3d Printed art toys'

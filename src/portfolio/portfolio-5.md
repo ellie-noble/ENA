@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPortfolioLayout.astro
 title: 'Boudoir Babydoll'
 pubDate: 2004-07-01
 description: 'Analogue + digital hybrid self portrait (aged 17)'

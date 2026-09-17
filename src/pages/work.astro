@@ -1,8 +1,11 @@
 ---
+import { getCollection } from "astro:content";
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PortfolioPost from '../components/PortfolioPost.astro'; 
-const allPortfolio = Object.values(import.meta.glob('./portfolio/*.md', { eager: true }));
+
 const pageTitle = "Work";
+const allPortfolio = await getCollection("portfolio");
+
 ---
 
 <BaseLayout pageTitle={pageTitle}>
@@ -10,7 +13,11 @@ const pageTitle = "Work";
 		<h1>{pageTitle}</h1>
         <p>This will be my work home gallery, to which everything else will link eventually (i hope!!)</p>
         <ul>
-          {allPortfolio.map((portfolio: any) => <PortfolioPost url={portfolio.url} title={portfolio.frontmatter.title} />)}
+          {
+            allPortfolio.map((portfolio) => (
+             <PortfolioPost url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />
+            ))
+          }
         </ul>
 		</div>
 </BaseLayout>

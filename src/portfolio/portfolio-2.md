@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPortfolioLayout.astro
 title: 'Soft Ties'
 pubDate: 2011-09-01
 description: 'Photoart tryptich. Playing with ones constraints.'
