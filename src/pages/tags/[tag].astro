@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const allPortfolio = Object.values(import.meta.glob('../portfolio/*.md', { eager: true }));
+
+  return [
+    { params: { tag: "beauty" }, props: {portfolio: allPortfolio}},
+    { params: { tag: "illustration" }, props: {portfolio: allPortfolio}},
+    { params: { tag: "selfportrait" }, props: {portfolio: allPortfolio}},
+    { params: { tag: "digital" }, props: {portfolio: allPortfolio}},
+    { params: { tag: "photoart" }, props: {portfolio: allPortfolio}},
+    { params: { tag: "stilllife" }, props: {portfolio: allPortfolio}},
+    { params: { tag: "pastel" }, props: {portfolio: allPortfolio}},
+    { params: { tag: "hybrid" }, props: {portfolio: allPortfolio}},
+    { params: { tag: "3dprint" }, props: {portfolio: allPortfolio}},
+    { params: { tag: "experimental" }, props: {portfolio: allPortfolio}},
+    { params: { tag: "erotic" }, props: {portfolio: allPortfolio}},
+    { params: { tag: "storytelling" }, props: {portfolio: allPortfolio}},
+    { params: { tag: "objects" }, props: {portfolio: allPortfolio}},
+    { params: { tag: "toys" }, props: {portfolio: allPortfolio}}
+  ];
+}
+
+const { tag } = Astro.params;
+const { portfolio } = Astro.props;
+const filteredPortfolio = portfolio.filter((portfolio: any) => portfolio.frontmatter.tags?.includes(tag));
+---
+<BaseLayout pageTitle={tag}>
+  <p>Work tagged with {tag}</p>
+  <ul>
+    {filteredPortfolio.map((portfolio: any) => <li><a href={portfolio.url}>{portfolio.frontmatter.title}</a></li>)}
+  </ul>
+</BaseLayout>

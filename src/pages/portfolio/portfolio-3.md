@@ -7,8 +7,7 @@ author: 'Ellie Noble'
 image:
     url: 'https://files.catbox.moe/8cqapc.jpg'
     alt: 'Blonde girl with heart shaped glasses and retro grey telephone'
-
-tags: ["self-portrait", "digital", "photoart"]
+tags: ["selfportrait", "digital", "photoart"]
 medium: 'digital'
 submedium: 'photoart'
 ---

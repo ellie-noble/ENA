@@ -7,8 +7,7 @@ author: 'Ellie Noble'
 image:
     url: 'https://files.catbox.moe/xvnbk6.jpg'
     alt: 'Blonde girl with hidden face and braid wrapped around her neck'
-
-tags: ["self-portrait", "digital", "photoart"]
+tags: ["selfportrait", "digital", "photoart"]
 medium: 'digital'
 submedium: 'photoart'
 ---

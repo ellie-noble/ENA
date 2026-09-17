@@ -7,7 +7,7 @@ author: 'Ellie Noble'
 image:
     url: 'https://files.catbox.moe/tlcwcb.jpg'
     alt: 'Cute desk with porcelain dog'
-tags: ["pastel", "still-life"]
+tags: ["pastel", "stilllife"]
 medium: 'digital'
 submedium: 'photography'
 featured: '4'

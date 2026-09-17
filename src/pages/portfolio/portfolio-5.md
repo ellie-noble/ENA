@@ -7,7 +7,7 @@ author: 'Ellie Noble'
 image:
     url: 'https://files.catbox.moe/aufbal.jpg'
     alt: 'Wild-eyed girl in vintage mood bedroom'
-tags: ["self-portrait", "hybrid", "photoart"]
+tags: ["selfportrait", "hybrid", "photoart"]
 medium: 'hybrid'
 submedium: 'photoart'
 ---
