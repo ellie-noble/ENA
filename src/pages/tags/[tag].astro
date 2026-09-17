@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import PortfolioPost from '../../components/PortfolioPost.astro';
 
 export async function getStaticPaths() {
   const allPortfolio = Object.values(import.meta.glob('../portfolio/*.md', { eager: true }));
@@ -29,6 +30,6 @@ const filteredPortfolio = portfolio.filter((portfolio: any) => portfolio.frontma
 <BaseLayout pageTitle={tag}>
   <p>Work tagged with {tag}</p>
   <ul>
-    {filteredPortfolio.map((portfolio: any) => <li><a href={portfolio.url}>{portfolio.frontmatter.title}</a></li>)}
+    {filteredPortfolio.map((portfolio: any) => <PortfolioPost url={portfolio.url} title={portfolio.frontmatter.title} />)}
   </ul>
 </BaseLayout>
