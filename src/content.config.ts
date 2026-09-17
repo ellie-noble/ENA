@@ -16,6 +16,8 @@ const portfolio = defineCollection({
         url: z.string(),
         alt: z.string()
       }),
+      medium: z.string(),
+      submedium: z.string(),
       tags: z.array(z.string())
     })
 });
