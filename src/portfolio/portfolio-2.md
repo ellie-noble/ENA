@@ -9,6 +9,8 @@ image:
 tags: ["selfportrait", "digital", "photoart"]
 medium: 'digital'
 submedium: 'photoart'
+cover: "./card-img-soft-ties.jpg"
+coverAlt: "Alt image skipping"
 ---
 Images speak of ambiguity
 in ways that words can struggle to express.

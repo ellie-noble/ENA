@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PortfolioPost from '../components/PortfolioPost.astro'; 
+import { Image } from "astro:assets"; 
 
 const pageTitle = "Work";
 const allPortfolio = await getCollection("portfolio");
@@ -15,6 +16,7 @@ const allPortfolio = await getCollection("portfolio");
         <ul>
           {
             allPortfolio.map((portfolio) => (
+                <Image src={portfolio.data.cover} alt={portfolio.data.coverAlt} />
              <PortfolioPost url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />
             ))
           }

@@ -7,7 +7,7 @@ import { z } from "astro/zod";
 // Define a `loader` and `schema` for each collection
 const portfolio = defineCollection({
     loader: glob({ pattern: '**/[^_]*.md', base: "./src/portfolio" }),
-    schema: z.object({
+    schema: ({image}) => z.object({
       title: z.string(),
       pubDate: z.date(),
       description: z.string(),
@@ -16,6 +16,8 @@ const portfolio = defineCollection({
         url: z.string(),
         alt: z.string()
       }),
+      cover: image(),
+      coverAlt: z.string(),
       medium: z.string(),
       submedium: z.string(),
       tags: z.array(z.string())

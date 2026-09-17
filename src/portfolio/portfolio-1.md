@@ -9,6 +9,8 @@ image:
 tags: ["beauty", "illustration"]
 medium: 'digital'
 submedium: 'airbrush'
+cover: "./card-img-ktach.jpg"
+coverAlt: "Alt image Key"
 featured: '1'
 ---
 A woman who is still a child inside
