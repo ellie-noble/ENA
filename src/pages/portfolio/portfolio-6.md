@@ -4,8 +4,9 @@ title: 'Mechanical Bride'
 pubDate: 20024-03-21
 description: 'Test stop motion animation.'
 author: 'Ellie Noble'
-imageUrl: 'https://litter.catbox.moe/1gn6raw4cclkwy4i.jpg'
-imageAlt: 'Robot doll in veil with bouquet of flowers'
+image:
+    url: 'https://files.catbox.moe/8mlvda.jpg'
+    alt: 'Robot doll in veil with bouquet of flowers'
 tags: ["3d print", "experimental"]
 medium: 'hybrid'
 submedium: 'animation'

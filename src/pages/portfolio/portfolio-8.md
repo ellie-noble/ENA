@@ -4,8 +4,9 @@ title: 'Velvet Box'
 pubDate: 20017-09-09
 description: 'The lengths we go to for desire, while avoiding the pain of human relations.'
 author: 'Ellie Noble'
-imageUrl: 'https://litter.catbox.moe/4ksrfs0v2nm9wooz.jpg'
-imageAlt: 'Girl at window with mysterious metal case'
+image:
+    url: 'https://files.catbox.moe/29lmfu.jpg'
+    alt: 'Girl at window with mysterious metal case'
 tags: ["erotic", "storytelling"]
 medium: 'narrative'
 submedium: 'short'

@@ -4,8 +4,9 @@ title: 'Self Portrait with Telephone'
 pubDate: 2018-09-01
 description: 'Inspired by the airbush art of Syd Brak'
 author: 'Ellie Noble'
-imageUrl: '../../images/telephone-ellie-noble.jpg'
-imageAlt: 'Blonde girl with heart shaped glasses and retro grey telephone'
+image:
+    url: 'https://files.catbox.moe/8cqapc.jpg'
+    alt: 'Blonde girl with heart shaped glasses and retro grey telephone'
 
 tags: ["self-portrait", "digital", "photoart"]
 medium: 'digital'
