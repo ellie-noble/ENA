@@ -9,6 +9,8 @@ image:
 tags: ["pastel", "stilllife"]
 medium: 'digital'
 submedium: 'photography'
+cover: "./card-img-feminine-studies.jpg"
+coverAlt: "Girlish desk with kitsch ornament"
 featured: '4'
 ---
 elementary my dear. I have no more to say, I am a placeholder.

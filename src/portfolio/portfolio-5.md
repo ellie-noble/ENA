@@ -9,6 +9,8 @@ image:
 tags: ["selfportrait", "hybrid", "photoart"]
 medium: 'hybrid'
 submedium: 'photoart'
+cover: "./card-img-boudoir.jpg"
+coverAlt: "Mad girlie"
 ---
 This is the content of my post. When I was a teen, I was crazy. I am still unhinged.
 

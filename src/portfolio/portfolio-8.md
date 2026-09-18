@@ -10,5 +10,7 @@ tags: ["erotic", "storytelling"]
 medium: 'narrative'
 submedium: 'short'
 featured: '3'
+cover: "./card-img-velvet-box.jpg"
+coverAlt: "Girl in grey room with metal box"
 ---
 Catherine has a plan but perhaps it is not so simple as she hopes.  

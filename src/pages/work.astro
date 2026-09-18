@@ -16,7 +16,7 @@ const allPortfolio = await getCollection("portfolio");
         <ul>
           {
             allPortfolio.map((portfolio) => (
-                <Image src={portfolio.data.cover} alt={portfolio.data.coverAlt} />
+                <Image src={portfolio.data.cover} alt={portfolio.data.coverAlt} width="300" />
              <PortfolioPost url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />
             ))
           }

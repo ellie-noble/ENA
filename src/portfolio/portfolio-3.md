@@ -9,6 +9,8 @@ image:
 tags: ["selfportrait", "digital", "photoart"]
 medium: 'digital'
 submedium: 'photoart'
+cover: "./card-img-telephone.jpg"
+coverAlt: "Girl with heart shaped sunglasses holds telephone"
 ---
 Just me and a phone
 

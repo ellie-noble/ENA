@@ -9,5 +9,7 @@ image:
 tags: ["objects", "toys"]
 medium: 'hybrid'
 submedium: '3d'
+cover: "./card-img-sweet-dreams.jpg"
+coverAlt: "Kawaii inspired small sculptures"
 ---
 Some sculpted items I made   

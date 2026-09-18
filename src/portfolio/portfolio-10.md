@@ -9,5 +9,8 @@ image:
 tags: ["photoart", "invisible"]
 medium: 'hybrid'
 submedium: 'photoart'
+cover: "./card-img-sweet-dreams.jpg"
+coverAlt: "Kawaii inspired ABSENT sculptures"
+---
 ---
 Some sculpted items I made   
