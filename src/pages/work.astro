@@ -13,13 +13,15 @@ const allPortfolio = await getCollection("portfolio");
 		<div id="portfolio" class="content">
 		<h1>{pageTitle}</h1>
         <p>This will be my work home gallery, to which everything else will link eventually (i hope!!)</p>
-        <ul>
+        <ul class="portfolio-cards">
+          <li class="card">
           {
             allPortfolio.map((portfolio) => (
-                <Image src={portfolio.data.cover} alt={portfolio.data.coverAlt} width="300" />
+                <Image src={portfolio.data.cover} alt={portfolio.data.coverAlt} width="776" />
              <PortfolioPost url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />
             ))
           }
+          </li>
         </ul>
 		</div>
 </BaseLayout>
