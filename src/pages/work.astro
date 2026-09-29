@@ -1,27 +1,14 @@
 ---
-import { getCollection } from "astro:content";
+
 import BaseLayout from '../layouts/BaseLayout.astro';
-import PortfolioPost from '../components/PortfolioPost.astro'; 
-import { Image } from "astro:assets"; 
+import AllPortfolio from '../components/AllPortfolio.astro';
 
 const pageTitle = "Work";
-const allPortfolio = await getCollection("portfolio");
+
 
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-		<div id="portfolio" class="content">
-		<h1>{pageTitle}</h1>
-        <p>This will be my work home gallery, to which everything else will link eventually (i hope!!)</p>
-        <ul class="portfolio-cards">
-          <li class="card">
-          {
-            allPortfolio.map((portfolio) => (
-                <Image src={portfolio.data.cover} alt={portfolio.data.coverAlt} width="776" />
-             <PortfolioPost url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />
-            ))
-          }
-          </li>
-        </ul>
-		</div>
+  <p>This will be my work home gallery, to which everything else will link eventually (i hope!!)</p>
+	<AllPortfolio />	
 </BaseLayout>
