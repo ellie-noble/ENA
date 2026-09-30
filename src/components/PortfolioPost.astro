@@ -1,5 +1,7 @@
 ---
 
-const { title, url } = Astro.props;
+const { medium, submedium, title, url } = Astro.props;
 ---
-<a href={url}>{title}</a>
+<h4><span>{medium}</span>/{submedium}</h4>
+<hr>
+<h5><a href={url}>{title}</a></h5>

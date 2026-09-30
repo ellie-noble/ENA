@@ -42,7 +42,6 @@ body {
   }
 }
 
-
 * {
   box-sizing: border-box;
 }
@@ -52,6 +51,35 @@ h1 {
   font-size: 2.5rem;
 }
 
+h3 {
+  text-transform: uppercase;
+  font-weight:normal;
+  text-decoration: none;
+  font-size: 1.75rem;
+  letter-spacing: 0.5rem;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  color: #7a6796;
+}
+
+h4 span {
+  color: #d52bd3;
+}
+
+h5 {
+  margin-top: 1rem;
+}
+
+h5 a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: normal;
+}
 
 /* nav styles */
 
@@ -301,11 +329,15 @@ margin: 0;
 
 @media (min-width: 636px) {
 .content {
-  margin: 0rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 }
 
 /* Card Module Styling */
+
 
 .portfolio-cards {
   display: grid;
@@ -321,3 +353,15 @@ margin: 0;
   width: 100%;
   height: auto;
 }
+
+.portfolio-cards hr {
+  height: 1px;
+  color:#d52bd3;
+  background: #d52bd3;
+  font-size: 0;
+  border: 0;
+}
+
+
+
+

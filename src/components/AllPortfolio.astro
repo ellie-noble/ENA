@@ -11,8 +11,8 @@ const allPortfolio = await getCollection("portfolio");
           {
             allPortfolio.map((portfolio) => (
                 <li>
-                <Image src={portfolio.data.cover} alt={portfolio.data.coverAlt} width="776" />
-             <PortfolioPost url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />
+                <a href= {`/portfolio/${portfolio.id}/`}> <Image src={portfolio.data.cover} alt={portfolio.data.coverAlt} width="776" /></a>
+             <PortfolioPost medium={portfolio.data.medium} submedium={portfolio.data.submedium} url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />
              </li>
             ))
           }

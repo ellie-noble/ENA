@@ -8,7 +8,7 @@ image:
     alt: 'Sweet dreams mini collection'
 tags: ["photoart", "invisible"]
 medium: 'hybrid'
-submedium: 'photoart'
+submedium: 'objects'
 cover: "./card-img-sweet-dreams.jpg"
 coverAlt: "Kawaii inspired ABSENT sculptures"
 ---

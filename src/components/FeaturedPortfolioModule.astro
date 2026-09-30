@@ -1,22 +1,25 @@
 ---
-import PortfolioCard from "./PortfolioCard.astro";
+import { getCollection } from "astro:content";
+import PortfolioPost from '../components/PortfolioPost.astro'; 
+import { Image } from "astro:assets"; 
+
+const featuredPortfolio = await getCollection("portfolio", ({ data }) => {
+  return data.submedium == "photoart";
+});
 ---
 
-<ul id="featured-portfolio-cards" class="portfolio-cards">
-    <PortfolioCard />
-    <li class="card">
-        <img src="https://litter.catbox.moe/1gn6raw4cclkwy4i.jpg" alt="Black and white image of robot-like doll in veil" />
-        <p><a href="/portfolio/portfolio-6/" class="card-title">Portfolio 6</a></p>
-        <p>A Stop-motion experiment</p>
-    </li>
-    <li class="card">
-        <img src="https://litter.catbox.moe/4ksrfs0v2nm9wooz.jpg" alt="Girl at window with mysterious metal case" />
-        <a href="/portfolio/portfolio-8/" class="card-title">Portfolio 8</a>
-        <p>The lengths we go to for desire, while avoiding the pain of human relations.</p>
-    </li>
-    <li class="card">
-        <img src="https://litter.catbox.moe/sd2ajyoe4s2yb7uh.jpg" alt="Desk with cute vintage dog ornament" />
-        <a href="/portfolio/portfolio-4/" class="card-title">Portfolio 4</a>
-        <p>Some notes from my desktop</p>
-    </li>
-</ul>
+<div id="portfolio" class="content">
+        <ul class="portfolio-cards">
+          
+          {
+            featuredPortfolio.map((portfolio) => (
+                <li>
+                <a href= {`/portfolio/${portfolio.id}/`}> <Image src={portfolio.data.cover} alt={portfolio.data.coverAlt} width="776" /></a>
+             <PortfolioPost medium={portfolio.data.medium} submedium={portfolio.data.submedium} url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />
+             </li>
+            ))
+          }
+        
+          
+        </ul>
+		</div>
