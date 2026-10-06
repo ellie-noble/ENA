@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 import Header from '../components/Header.astro';
-
+import Footer from '../components/Footer.astro';
 
 const { pageTitle } = Astro.props;
 ---
@@ -16,13 +16,11 @@ const { pageTitle } = Astro.props;
 		<title>{pageTitle} | Ellie Noble</title>
 	</head>
 	<body>
+		<div class="body-wrapper">
 		<Header />
         <slot />
-        
-		<div id="home" class="content">
-			<p>Ellie Noble has been posting art on the internet since 2001. But this is fairly new and difficult!</p>
 		</div>
-        
+        <Footer />
 		<script>
 			import "../scripts/menu.js";
 		</script>
