@@ -2,6 +2,6 @@
 
 const { medium, submedium, title, url } = Astro.props;
 ---
-<h4><span><a href={`/medium/${medium}/`}>{medium}</a></span>/{submedium}</h4>
+<h4><span><a href={`/medium/${medium}/`}>{medium}</a></span>/<a href={`/submedium/${submedium}/`}>{submedium}</a></h4>
 <hr>
 <h5><a href={url}>{title}</a></h5>

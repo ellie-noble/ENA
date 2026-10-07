@@ -5,25 +5,25 @@ import PortfolioPost from '../../components/PortfolioPost.astro';
 
 export async function getStaticPaths() {
   const allPortfolio = await getCollection("portfolio");
-  const uniqueMedium = [...new Set(allPortfolio.map((portfolio) => portfolio.data.medium).flat())];
+  const uniqueSubmedium = [...new Set(allPortfolio.map((portfolio) => portfolio.data.submedium).flat())];
 
-  return uniqueMedium.map((medium) => {
+  return uniqueSubmedium.map((submedium) => {
     const filteredPortfolio = allPortfolio.filter((portfolio) => 
-      portfolio.data.medium.includes(medium)
+      portfolio.data.submedium.includes(submedium)
     );
     return {
-      params: { medium },
+      params: { submedium },
       props: { portfolio: filteredPortfolio },
     };
   });
 }
 
-const { medium } = Astro.params;
+const { submedium } = Astro.params;
 const { portfolio } = Astro.props;
 
 ---
-<BaseLayout pageTitle={medium}>
-  <p>Work in {medium}</p>
+<BaseLayout pageTitle={submedium}>
+  <p>Work in {submedium}</p>
   <ul>
     {portfolio.map((portfolio) => <PortfolioPost medium={portfolio.data.medium} submedium={portfolio.data.submedium} url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />)}
   </ul>

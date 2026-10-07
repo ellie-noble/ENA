@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from "astro:content";
+
+const allPortfolio = await getCollection("portfolio");
+const submedium = [...new Set(allPortfolio.map((portfolio) => portfolio.data.submedium).flat())];
+const pageTitle = 'Submedium Index'
+
+---
+<BaseLayout pageTitle={pageTitle}>
+    <div>
+        {submedium.map((submedium) => (
+            <p><a href={`/submedium/${submedium}`}>{submedium}</a></p>  
+            ))}
+    </div>
+</BaseLayout>
