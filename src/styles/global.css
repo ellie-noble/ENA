@@ -37,6 +37,7 @@ body {
     margin-left:auto;
     margin-right:auto;
     margin-bottom: 5vh;
+    min-height: 100vh;
 }
 
 @media (min-width: 636px) {
@@ -44,7 +45,7 @@ body {
     
     width: 100%;
     max-width: 125ch;
-    min-height: 100vh;
+    
     padding: 1rem;
     font-size: 1.1rem;
   }
@@ -100,7 +101,7 @@ h5 a {
 }
 
 .header-container-mobile div {
-    margin:0.4rem 0.4rem 0.2rem;
+    margin:0.4rem 0.4rem 0;
     padding:0px;
 }
 

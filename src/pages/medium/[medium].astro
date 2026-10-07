@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PortfolioPost from '../../components/PortfolioPost.astro';
+
+export async function getStaticPaths() {
+  const allPortfolio = await getCollection("portfolio");
+  const uniqueMedium = [...new Set(allPortfolio.map((portfolio) => portfolio.data.medium).flat())];
+
+  return uniqueMedium.map((medium) => {
+    const filteredPortfolio = allPortfolio.filter((portfolio) => 
+      portfolio.data.medium.includes(medium)
+    );
+    return {
+      params: { medium },
+      props: { portfolio: filteredPortfolio },
+    };
+  });
+}
+
+const { medium } = Astro.params;
+const { portfolio } = Astro.props;
+
+---
+<BaseLayout pageTitle={medium}>
+  <p>Work in {medium}</p>
+  <ul>
+    {portfolio.map((portfolio) => <PortfolioPost url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />)}
+  </ul>
+</BaseLayout>
