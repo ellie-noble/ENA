@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PortfolioPost from '../../components/PortfolioPost.astro';
+import { Image } from "astro:assets";
 
 export async function getStaticPaths() {
   const allPortfolio = await getCollection("portfolio");
@@ -24,7 +25,15 @@ const { portfolio } = Astro.props;
 ---
 <BaseLayout pageTitle={medium}>
   <p>Work in {medium}</p>
-  <ul>
-    {portfolio.map((portfolio) => <PortfolioPost medium={portfolio.data.medium} submedium={portfolio.data.submedium} url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />)}
+  <ul class="portfolio-cards">
+
+    {
+        portfolio.map((portfolio) => (
+        <li>
+            <a href= {`/portfolio/${portfolio.id}/`}> <Image src={portfolio.data.cover} alt={portfolio.data.coverAlt} width="776" /></a>
+            <PortfolioPost medium={portfolio.data.medium} submedium={portfolio.data.submedium} url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />
+        </li>
+    ))
+    }
   </ul>
 </BaseLayout>
