@@ -24,7 +24,9 @@ const { portfolio } = Astro.props;
 
 ---
 <BaseLayout pageTitle={medium}>
-  <p>Work in {medium}</p>
+  
+  <div id="portfolio" class="content">
+    <p>Work in {medium}</p>
   <ul class="portfolio-cards">
 
     {
@@ -36,4 +38,5 @@ const { portfolio } = Astro.props;
     ))
     }
   </ul>
+  </div>
 </BaseLayout>
