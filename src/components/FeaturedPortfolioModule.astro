@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import PortfolioPost from '../components/PortfolioPost.astro'; 
 import { Image } from "astro:assets"; 
+import featuredIcon from '../assets/pink-heart-featured-179x179.png';
 
 const featuredPortfolio1 = await getCollection("portfolio", ({ data }) => {
   return data.featured == "1";
@@ -24,7 +25,10 @@ const featuredPortfolio4 = await getCollection("portfolio", ({ data }) => {
           {
             featuredPortfolio1.map((portfolio) => (
                 <li>
+                  <div class="featured-folio-image">
+                    <Image src= {featuredIcon} alt="featured" class="featured-heart" style="width:6%;height:auto" />
                 <a href= {`/portfolio/${portfolio.id}/`}> <Image src={portfolio.data.cover} alt={portfolio.data.coverAlt} width="776" /></a>
+                  </div>
              <PortfolioPost medium={portfolio.data.medium} submedium={portfolio.data.submedium} url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />
              </li>
              
@@ -33,8 +37,11 @@ const featuredPortfolio4 = await getCollection("portfolio", ({ data }) => {
           {
             featuredPortfolio2.map((portfolio) => (
                 <li>
+                  <div class="featured-folio-image">
+                    <Image src= {featuredIcon} alt="featured" class="featured-heart" style="width:6%;height:auto" />
                 <a href= {`/portfolio/${portfolio.id}/`}> <Image src={portfolio.data.cover} alt={portfolio.data.coverAlt} width="776" /></a>
              <PortfolioPost medium={portfolio.data.medium} submedium={portfolio.data.submedium} url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />
+                  </div>
              </li>
              
             ))
@@ -42,8 +49,11 @@ const featuredPortfolio4 = await getCollection("portfolio", ({ data }) => {
           {
             featuredPortfolio3.map((portfolio) => (
                 <li>
+                  <div class="featured-folio-image">
+                    <Image src= {featuredIcon} alt="featured" class="featured-heart" style="width:6%;height:auto" />
                 <a href= {`/portfolio/${portfolio.id}/`}> <Image src={portfolio.data.cover} alt={portfolio.data.coverAlt} width="776" /></a>
              <PortfolioPost medium={portfolio.data.medium} submedium={portfolio.data.submedium} url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />
+                  </div>
              </li>
              
             ))
@@ -52,9 +62,11 @@ const featuredPortfolio4 = await getCollection("portfolio", ({ data }) => {
           {
             featuredPortfolio4.map((portfolio) => (
                 <li>
-                  
+                 <div class="featured-folio-image">
+                    <Image src= {featuredIcon} alt="featured" class="featured-heart" style="width:6%;height:auto" /> 
                 <a href= {`/portfolio/${portfolio.id}/`}> <Image src={portfolio.data.cover} alt={portfolio.data.coverAlt} width="776" /></a>
              <PortfolioPost medium={portfolio.data.medium} submedium={portfolio.data.submedium} url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />
+                 </div>
              </li>
              ))
           }

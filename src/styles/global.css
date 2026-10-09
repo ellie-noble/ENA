@@ -399,3 +399,7 @@ margin: 0;
   display:none;
 }
 }
+
+.portfolio-cards .featured-folio-image { position: relative; }
+.portfolio-cards .featured-folio-image img { display: block; }
+.portfolio-cards .featured-folio-image .featured-heart { position: absolute; top:2%; right:2.5%; }
