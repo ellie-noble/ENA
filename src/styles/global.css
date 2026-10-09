@@ -101,7 +101,6 @@ h5 a {
   font-weight: normal;
 }
 
-
 /* nav styles */
 
 .header-container-mobile {
@@ -308,7 +307,7 @@ h5 a {
 
 .abutton a {
   font-size: 0.9rem;
-  padding: 6% 12%;
+  padding: 0.75rem 1.25rem;
   margin: auto;
   width: fit-content;
   border-radius: 25px;
@@ -357,6 +356,37 @@ margin: 0;
 }
 }
 
+.about-container {
+  background-color:rgba(214, 206, 220, 0.6);
+  border: 1px solid #e5e2e9;
+}
+
+.about-container .about-content {
+  margin: auto;
+  width: 66%;
+  padding:0.5rem;
+  margin-top:10%; 
+  margin-bottom:10%;
+}
+
+@media (min-width: 636px) {
+  .about-container .about-content {
+  margin: auto;
+  width: 33%;
+  padding:0.5rem;
+  margin-top:10%; 
+  margin-bottom:10%;
+}
+}
+
+.about-container .about-content hr {
+  height: 1px;
+  color:#d52bd3;
+  background: #d52bd3;
+  font-size: 0;
+  border: 0;
+}
+
 /* Card Module Styling */
 
 
@@ -403,3 +433,10 @@ margin: 0;
 .portfolio-cards .featured-folio-image { position: relative; }
 .portfolio-cards .featured-folio-image img { display: block; }
 .portfolio-cards .featured-folio-image .featured-heart { position: absolute; top:2%; right:2.5%; }
+
+/* Markdown Portfolio Styling */
+
+.markdown-portfolio-container {
+  margin-top: 5%;
+  text-align: center;
+}
