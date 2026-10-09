@@ -11,6 +11,6 @@ medium: 'hybrid'
 submedium: 'objects'
 cover: "./card-img-sweet-dreams.jpg"
 coverAlt: "Kawaii inspired ABSENT sculptures"
----
+featured: '0'
 ---
 Some sculpted items I made   

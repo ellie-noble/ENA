@@ -11,6 +11,6 @@ medium: 'hybrid'
 submedium: 'animation'
 cover: "./card-img-mechanical-bride.jpg"
 coverAlt: "Robot doll BxW"
-featured: 'true'
+featured: '2'
 ---
 A 3d printed doll charachter reflects on the fleeting nature of feminine allure.

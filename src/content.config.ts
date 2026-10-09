@@ -20,6 +20,7 @@ const portfolio = defineCollection({
       coverAlt: z.string(),
       medium: z.string(),
       submedium: z.string(),
+      featured: z.string(),
       tags: z.array(z.string())
     })
 });

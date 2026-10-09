@@ -11,6 +11,7 @@ medium: 'digital'
 submedium: 'photoart'
 cover: "./card-img-soft-ties.jpg"
 coverAlt: "Alt image "
+featured: '0'
 ---
 Images speak of ambiguity
 in ways that words can struggle to express.

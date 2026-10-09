@@ -352,7 +352,7 @@ margin: 0;
 .content {
   margin-right: 0rem;
   margin-left: 0rem;
-  margin-top: 2.5rem;
+  margin-top: 0.5rem;
   margin-bottom: 2.5rem;
 }
 }
@@ -394,3 +394,8 @@ margin: 0;
   text-decoration: none;
 }
 
+@media (min-width: 636px) {
+.featured-mobile-only li {
+  display:none;
+}
+}

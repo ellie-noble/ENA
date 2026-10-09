@@ -11,6 +11,7 @@ medium: 'digital'
 submedium: 'photoart'
 cover: "./card-img-telephone.jpg"
 coverAlt: "Girl with heart shaped sunglasses holds telephone"
+featured: '0'
 ---
 Just me and a phone
 

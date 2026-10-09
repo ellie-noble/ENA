@@ -3,23 +3,61 @@ import { getCollection } from "astro:content";
 import PortfolioPost from '../components/PortfolioPost.astro'; 
 import { Image } from "astro:assets"; 
 
-const featuredPortfolio = await getCollection("portfolio", ({ data }) => {
-  return data.submedium == "photoart";
+const featuredPortfolio1 = await getCollection("portfolio", ({ data }) => {
+  return data.featured == "1";
+});
+const featuredPortfolio2 = await getCollection("portfolio", ({ data }) => {
+  return data.featured == "2";
+});
+const featuredPortfolio3 = await getCollection("portfolio", ({ data }) => {
+  return data.featured == "3";
+});
+const featuredPortfolio4 = await getCollection("portfolio", ({ data }) => {
+  return data.featured == "4";
 });
 ---
 
 <div id="portfolio" class="content">
+    <h4 style="visibility:hidden">Featured Portfolio</h4>
         <ul class="portfolio-cards">
           
           {
-            featuredPortfolio.map((portfolio) => (
+            featuredPortfolio1.map((portfolio) => (
                 <li>
                 <a href= {`/portfolio/${portfolio.id}/`}> <Image src={portfolio.data.cover} alt={portfolio.data.coverAlt} width="776" /></a>
              <PortfolioPost medium={portfolio.data.medium} submedium={portfolio.data.submedium} url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />
              </li>
+             
             ))
           }
-        
-          
+          {
+            featuredPortfolio2.map((portfolio) => (
+                <li>
+                <a href= {`/portfolio/${portfolio.id}/`}> <Image src={portfolio.data.cover} alt={portfolio.data.coverAlt} width="776" /></a>
+             <PortfolioPost medium={portfolio.data.medium} submedium={portfolio.data.submedium} url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />
+             </li>
+             
+            ))
+          }
+          {
+            featuredPortfolio3.map((portfolio) => (
+                <li>
+                <a href= {`/portfolio/${portfolio.id}/`}> <Image src={portfolio.data.cover} alt={portfolio.data.coverAlt} width="776" /></a>
+             <PortfolioPost medium={portfolio.data.medium} submedium={portfolio.data.submedium} url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />
+             </li>
+             
+            ))
+          }
+          <div class="featured-mobile-only">
+          {
+            featuredPortfolio4.map((portfolio) => (
+                <li>
+                  
+                <a href= {`/portfolio/${portfolio.id}/`}> <Image src={portfolio.data.cover} alt={portfolio.data.coverAlt} width="776" /></a>
+             <PortfolioPost medium={portfolio.data.medium} submedium={portfolio.data.submedium} url={`/portfolio/${portfolio.id}/`} title={portfolio.data.title} />
+             </li>
+             ))
+          }
+          </div>
         </ul>
 		</div>
