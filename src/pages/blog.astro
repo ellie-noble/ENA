@@ -2,11 +2,15 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Blog from '../components/Blog.astro'
 const pageTitle = "The Lost Princess Diaries";
+const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 ---
 <BaseLayout pageTitle={pageTitle} >
 	<div id="blog" class="content">
 	<h2 style="display:none">The Lost Princess Diaries</h2>
 	<p>This is where I will post my blog :P</p>
 	<Blog />
+	<ul>
+       {allPosts.map((post: any) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+    </ul>
 	</div>
 </BaseLayout>

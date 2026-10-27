@@ -1,0 +1,28 @@
+---
+import BaseLayout from './BaseLayout.astro'
+import { Image } from 'astro:assets'
+
+const { frontmatter } = Astro.props;
+
+---
+<BaseLayout pageTitle={frontmatter.title}>
+<div class="markdown-blogpost-container">
+{frontmatter.cover && (
+      <Image 
+        src={frontmatter.cover} 
+        alt={`Cover image for ${frontmatter.title}`} 
+        width={776}
+        height={970}
+        quality={100}
+      />
+    )}
+<h1>{frontmatter.title}</h1>
+
+
+
+<p><em>{frontmatter.description}</em></p>
+<p>by: {frontmatter.author}</p>
+<p>Published on: {frontmatter.pubDate.toString().slice(0,10)}</p>
+<slot />
+</div>
+</BaseLayout>
