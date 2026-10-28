@@ -153,7 +153,7 @@ h5 a {
 .nav-links-mobile a:hover,
 .nav-links-mobile a:focus {
   color: #d52bd3;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 :has(.menu[aria-expanded="true"]) .nav-links-mobile {
