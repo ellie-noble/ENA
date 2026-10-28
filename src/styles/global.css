@@ -209,19 +209,19 @@ h5 a {
     max-width: 50%;
     height: auto;
 }
-  
+ 
 .nav-meta-links-desktop {
   width: 100%;
-  margin:0;
-  display: block;
   position: static;
   background: none;
+
 }
 
 .nav-meta-links-desktop a {
   display: inline-block;
+  vertical-align: text-bottom;
+  margin:1.2rem;
   padding: 0px;
-  margin: 25px;
   text-decoration: none;
   font-size: 1.15rem;
   font-weight: normal;
@@ -230,15 +230,42 @@ h5 a {
   background-color: none;
 }
 
-.nav-meta-links-desktop img{
-    vertical-align: text-bottom;
-    padding-bottom: 0.1ch;
+.nav-meta-links-desktop .mail-icon-container {
+  margin-bottom: 0.3rem;
 }
 
 .nav-meta-links-desktop a:hover,
 .nav-meta-links-desktop a:focus {
   color: #d52bd3;
   text-decoration: underline;
+}
+
+.mail-icon-container {
+  position:relative;
+  top:0;
+  left:0;
+}
+
+.mail-icon-container img {
+  display:block;
+} 
+
+.mail-icon-container .mail-hover {
+  position: absolute; 
+  top:0; right:0; 
+}
+
+.mail-icon-container .mail-hover {
+  opacity:0;
+}
+
+.mail-icon-container:hover .mail-hover {
+  opacity:1;
+
+}
+
+.mail-icon-container:hover .mail-default {
+  opacity:0;
 }
 
 .header-container-mobile {
@@ -430,7 +457,7 @@ margin: 0;
 }
 }
 
-.portfolio-cards .featured-folio-image { position: relative; }
+.portfolio-cards .featured-folio-image { position: relative; cursor:pointer; }
 .portfolio-cards .featured-folio-image img { display: block; }
 .portfolio-cards .featured-folio-image .featured-heart { position: absolute; top:2%; right:2.5%; }
 
