@@ -1,15 +1,29 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BlogPost from '../components/BlogPost.astro';
+import { Image } from "astro:assets";
+
 const pageTitle = "The Lost Princess Diaries";
-const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
+const allPosts = await getCollection("blog");
 ---
 <BaseLayout pageTitle={pageTitle} >
-	<div id="blog" class="content">
+	
 	<h2 style="display:none">The Lost Princess Diaries</h2>
-	<p>This is where I will post my blog :P</p>
+	<div class="blog-container">
+		<div class="content">
+		<div class="blog-posts">
 	<ul>
-       {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} description={post.frontmatter.description}/>)}
+       {allPosts.map((post) => (
+			<li>
+				<a href= {`/posts/${post.id}/`}><Image src={post.data.cover} alt={post.data.coverAlt} width="1260" /></a>
+			<BlogPost url={`/posts/${post.id}/`} title={post.data.title} description={post.data.description} pubDate={post.data.pubDate} />
+			</li>
+		))
+	}
     </ul>
 	</div>
+	</div>
+	</div>
+
 </BaseLayout>

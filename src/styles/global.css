@@ -68,8 +68,13 @@ body {
 }
 
 h1 {
-  margin: 1rem 0;
+  margin: 0.25rem 0;
   font-size: 2.5rem;
+}
+
+h1 a {
+  color: #000000;
+  text-decoration: none;
 }
 
 h2 {
@@ -165,6 +170,21 @@ p {
     font-size:0.95em;
   }
 }
+
+ul {
+  list-style-type: none;
+  padding:0;
+  margin: 0;
+}
+
+hr {
+  height: 1px;
+  color:#d52bd3;
+  background: #d52bd3;
+  font-size: 0;
+  border: 0;
+}
+
 /* nav styles */
 
 .header-container-mobile {
@@ -439,13 +459,6 @@ p {
 
 }
 
-.content ul {
-list-style-type: none;
-padding: 0;
-margin: 0;
-
-}
-
 @media (min-width: 636px) {
 .content {
   margin-right: 0rem;
@@ -470,11 +483,7 @@ margin: 0;
 
 @media (min-width: 636px) {
   .about-container .about-content {
-  margin: auto;
   width: 56%;
-  padding:0.5rem;
-  margin-top:10%; 
-  margin-bottom:10%;
 }
 }
 
@@ -482,16 +491,26 @@ margin: 0;
   margin:0.1rem;
 }
 
-.about-container .about-content hr {
-  height: 1px;
-  color:#d52bd3;
-  background: #d52bd3;
-  font-size: 0;
-  border: 0;
-}
+
 
 .row-text-center {
  text-align: center;
+}
+
+@media (min-width: 636px) {
+  .blog-container .blog-posts {
+  margin: auto;
+  width: 56%;
+}
+}
+
+.blog-container .blog-posts img {
+  max-width: 100%;
+  height: auto;
+}
+
+.post-date {
+  font-family: "OCR-B 10 Pitch BT";
 }
 
 /* Card Module Styling */
@@ -518,13 +537,6 @@ margin: 0;
   height: auto;
 }
 
-.portfolio-cards hr {
-  height: 1px;
-  color:#d52bd3;
-  background: #d52bd3;
-  font-size: 0;
-  border: 0;
-}
 
 .portfolio-cards a {
   text-decoration: none;

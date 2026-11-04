@@ -1,9 +1,8 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
-title: 'My First Blog Post'
-pubDate: 2022-07-01
-description: 'This is the first post of my new Astro blog.'
-author: 'Astro Learner'
+title: 'Once Upon A Time'
+pubDate: 2026-11-06
+description: 'These four little words cast a magic spell. They posses the power to transport us to a fairytale realm; a place that exists outside of temporal reality. A world that is as much now as it is then and evermore.'
+author: 'Ellie Noble'
 cover: "./blog-img-once-upon-a-time.jpg"
 coverAlt: "Childhood image of Ellie Noble in floral puff-sleeve dress"
 image:

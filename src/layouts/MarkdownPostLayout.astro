@@ -6,13 +6,13 @@ const { frontmatter } = Astro.props;
 
 ---
 <BaseLayout pageTitle={frontmatter.title}>
-<div class="markdown-blogpost-container">
+<div class="content">
 {frontmatter.cover && (
       <Image 
         src={frontmatter.cover} 
         alt={`Cover image for ${frontmatter.title}`} 
-        width={776}
-        height={970}
+        width={1260}
+        height={945}
         quality={100}
       />
     )}
@@ -22,7 +22,7 @@ const { frontmatter } = Astro.props;
 
 <p><em>{frontmatter.description}</em></p>
 <p>by: {frontmatter.author}</p>
-<p>Published on: {frontmatter.pubDate.toString().slice(0,10)}</p>
+<p>Published on: {frontmatter.pubDate.toLocaleDateString()}</p>
 <slot />
 </div>
 </BaseLayout>
