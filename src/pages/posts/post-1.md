@@ -4,6 +4,8 @@ title: 'My First Blog Post'
 pubDate: 2022-07-01
 description: 'This is the first post of my new Astro blog.'
 author: 'Astro Learner'
+cover: "./blog-img-once-upon-a-time.jpg"
+coverAlt: "Childhood image of Ellie Noble in floral puff-sleeve dress"
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'

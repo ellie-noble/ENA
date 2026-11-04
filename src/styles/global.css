@@ -74,8 +74,8 @@ h1 {
 
 h2 {
   font-family: 'Testgenue';
-  word-spacing: 0.2em;
-  letter-spacing: 0.08em;
+  word-spacing: 0.05em;
+  letter-spacing: 0.06em;
   font-size: 2.15rem;
 
 }
@@ -105,6 +105,23 @@ h4 a {
 
 h4 span a{
   color: #d52bd3;
+}
+
+.medium-gallery {
+  display: inline-block;
+  color: black;
+}
+
+.medium-gallery span{
+  color:#d52bd3
+}
+
+.medium-gallery:after {
+  content:'';
+  display: block;
+  border-top: 1px solid black;
+  margin-top: 0.2em;
+  margin-bottom: 1.5em;
 }
 
 @media (min-width: 636px) {
@@ -353,7 +370,7 @@ p {
     position: static; /* Remove absolute positioning */
     margin-top: 4%;  /* Add space between image and text */
     margin-bottom: 5%;
-    max-width: 25em;
+    max-width: 23em;
     text-align: center;
   }
 
@@ -388,10 +405,10 @@ p {
 
 .abutton a {
   font-size: 0.9rem;
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 1.15rem;
   margin: auto;
   width: fit-content;
-  border-radius: 25px;
+  border-radius: 19px;
   letter-spacing: 0.1em;
 }
 
@@ -411,7 +428,7 @@ p {
 
 @media screen and (max-width: 637px) {
   .abutton a {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -473,6 +490,10 @@ margin: 0;
   border: 0;
 }
 
+.row-text-center {
+ text-align: center;
+}
+
 /* Card Module Styling */
 
 
@@ -516,8 +537,22 @@ margin: 0;
 }
 
 .portfolio-cards .featured-folio-image { position: relative; cursor:pointer; }
+
 .portfolio-cards .featured-folio-image img { display: block; }
-.portfolio-cards .featured-folio-image .featured-heart { position: absolute; top:2%; right:2.5%; }
+
+.portfolio-cards .featured-folio-image .featured-heart {
+  width:8%;
+  height:auto;
+  position: absolute; 
+  top:2%;
+  right:2.5%; }
+
+@media (min-width: 636px) {
+  .portfolio-cards .featured-folio-image .featured-heart {
+    width: 6%;
+    height: auto;
+  }
+}
 
 /* Markdown Portfolio Styling */
 

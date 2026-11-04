@@ -26,7 +26,9 @@ const { portfolio } = Astro.props;
 <BaseLayout pageTitle={medium}>
   
   <div id="portfolio" class="content">
-    
+    <div class="row-text-center">
+      <h4 class="medium-gallery">Work in {medium}</h4>
+    </div>
   <ul class="portfolio-cards">
 
     {
@@ -38,7 +40,6 @@ const { portfolio } = Astro.props;
     ))
     }
   </ul>
-  <h5 style="text-align:center">End of {medium} archive.</h5>
   </div>
   
 </BaseLayout>
