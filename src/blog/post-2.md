@@ -12,3 +12,4 @@ pubDate: 2026-12-02
 tags: ["astro", "blogging", "learning in public", "successes"]
 ---
 After a successful first week learning Astro, I decided to try some more. I wrote and imported a small component from memory!
+This really is just a test piece to be deleted asap
