@@ -580,6 +580,16 @@ hr {
   text-align: center;
 }
 
+/* Blog Post Styling */
+
+.blog-post-body img {
+  margin-top: 1.5em;
+}
+
+.blog-post-body hr {
+  background: #ffffff;
+}
+
 /* Footer Styling */
 
 .footer {

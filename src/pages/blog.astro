@@ -24,7 +24,7 @@ const renderedPosts = await Promise.all(
 			<li>
 				<a href= {`/posts/${post.id}/`}><Image src={post.data.cover} alt={post.data.coverAlt} width="1260" /></a>
 			<BlogPost url={`/posts/${post.id}/`} title={post.data.title} description={post.data.description} pubDate={post.data.pubDate} />
-			<div> <post.Content /></div>
+			<div class="blog-post-body"> <post.Content /></div>
 			<hr />
 			<p>by {post.data.author}</p>
 			<br />
