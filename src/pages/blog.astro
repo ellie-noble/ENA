@@ -22,11 +22,12 @@ const renderedPosts = await Promise.all(
 	<ul>
        {renderedPosts.map((post) => (
 			<li>
-				<a href= {`/posts/${post.id}/`}><Image src={post.data.cover} alt={post.data.coverAlt} width="1260" /></a>
-				<BlogPost url={`/posts/${post.id}/`} title={post.data.title} description={post.data.description} pubDate={post.data.pubDate} />
+				<Image src={post.data.cover} alt={post.data.coverAlt} width="1260" />
+				<BlogPost title={post.data.title} description={post.data.description} pubDate={post.data.pubDate} series={post.data.series} />
 				<div class="blog-post-body"> <post.Content /></div>
 				<hr />
 				<p style="color:#7a6796; font-family:'OCR-B 10 Pitch BT';letter-spacing: -0.05em;">by {post.data.author}</p>
+				<p style="color:#d6cedc; font-style: italic;">Image Credits: {post.data.coverCredits}</p>
 				<br />
 			</li>
 		))

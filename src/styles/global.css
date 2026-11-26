@@ -43,7 +43,6 @@ body {
     margin-top: 0 ;
     margin-left:auto;
     margin-right:auto;
-    margin-bottom: 5vh;
     min-height: 100vh;
 }
 
@@ -493,13 +492,15 @@ hr {
   margin: auto;
   width: 75%;
   padding:0.5rem;
-  margin-top:10%; 
-  margin-bottom:10%;
+  margin-top:20%; 
+  margin-bottom:20%;
 }
 
 @media (min-width: 636px) {
   .about-container .about-content {
   width: 56%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 }
 
@@ -507,26 +508,8 @@ hr {
   margin:0.1rem;
 }
 
-
-
 .row-text-center {
  text-align: center;
-}
-
-@media (min-width: 636px) {
-  .blog-container .blog-posts {
-  margin: auto;
-  width: 56%;
-}
-}
-
-.blog-container .blog-posts img {
-  max-width: 100%;
-  height: auto;
-}
-
-.post-date {
-  font-family: "OCR-B 10 Pitch BT";
 }
 
 /* Card Module Styling */
@@ -589,7 +572,25 @@ hr {
   text-align: center;
 }
 
-/* Blog Post Styling */
+/* Blog Styling */
+
+
+@media (min-width: 636px) {
+  .blog-container .blog-posts {
+  margin: auto;
+  width: 56%;
+}
+}
+
+.blog-container .blog-posts img {
+  max-width: 100%;
+  height: auto;
+}
+
+.post-date {
+  font-family: "OCR-B 10 Pitch BT";
+}
+
 
 .blog-posts hr {
   background-color: #d6cedc;
@@ -601,14 +602,11 @@ hr {
 
 .blog-post-body img {
   margin-top: 1.5em;
+  margin-bottom: -0.25em;
 }
 
 .blog-post-body img + em {
-  font-family: "OCR-B 10 Pitch BT";
-  color:#7a6796;
-  font-style: normal;
-  letter-spacing: -0.05em;
- 
+  color:#d6cedc;
 }
 
 .blog-post-body hr {
@@ -620,7 +618,7 @@ hr {
 .footer {
   background-color:#7a6796;
   color:white; 
-  margin-top:4rem;
+  margin-top:0;
 }
 
 @media (min-width: 636px) {

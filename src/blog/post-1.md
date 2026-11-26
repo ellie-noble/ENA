@@ -1,14 +1,13 @@
 ---
 title: 'Once Upon A Time.'
-pubDate: 2026-11-06
+pubDate: 2026-11-26
 description: 'The start of a (lost) princess story, and the first article in my inaugural blog series on this website.'
 author: 'Ellie Noble'
-cover: "./blog-img-princess-collage.jpg"
-coverAlt: "Childhood image of Ellie Noble in floral puff-sleeve dress"
-image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["astro", "blogging", "learning in public"]
+series: 'The (Lost) Princess Diaries'
+cover: "./images/blog-img-princess-collage.jpg"
+coverAlt: "Collage of 90's and early 00's pop-culture princesses"
+coverCredits: 'Collage contains images from Nintendo, Warner Music, Mattel. These images are intended for educational and illustrative purposes, protected under international fair-use copyright law and remain property of the copyright holders.' 
+tags: ["fairytales", "exile", "transcendence", "personal meaning"]
 ---
 These four little words cast a magic spell. They hold the power to transport us to a fairytale realm; a place that exists outside of temporal reality. A world that is as much 'now' as it is 'then' and evermore.
 
@@ -16,9 +15,9 @@ In this land we are no longer specific and complex individuals. Instead, we find
 
 This archetypal foreverworld is where we find *the princess*. A girl poised on the brink of womanhood, whose virtue is expressed through her beauty, kind nature and dreams of love. We know the princess as we know the most gentle and sensitive parts of our own nature. Hopeful and naive, this child's blessed ignorance is bound by fate to face down the enchanted darkness of the adult world.
 
-So with what arrogance, you may ask, do I declare this fledgling blog series 'The (Lost) Princess Diaries'? I can only say that I invoke the princess and her story with deference and fascination. From the very start of my artistic journey 25 years ago, I've looked to explore the narratives of femininity. And, like all us girls of the millennial generation, I was raised in a princess culture. Toys, books, movies; Princess Diana; then later the phenomenon of the 'pop-princess', who symbolised a burgeoning sexuality still tinted with the pastel colour palette of childhood. We were *socially groomed* to try and embody her. And, perhaps, there was nothing wrong with that?!  
+So with what arrogance, you may ask, do I declare this fledgling blog series 'The (Lost) Princess Diaries'? I can only say that I invoke the princess and her story with deference and fascination. From the very start of my artistic journey around 25 years ago, I've looked to explore the narratives of femininity. And, like all us girls of the millennial generation, I was raised in a princess culture. Toys, books, movies; Princess Diana; then later the phenomenon of the 'pop-princess', who symbolised a burgeoning sexuality still tinted with the pastel colour palette of childhood. We were *socially groomed* to try and embody her. And, perhaps, there was nothing wrong with that?!  
 
-![alt text](blog-img-once-upon-a-time.jpg)
+![Childhood image of Ellie Noble in floral puff-sleeve dress](./images/blog-img-once-upon-a-time.jpg)
 *The writer of this blog in 1993.*
 
 ---
