@@ -2,7 +2,9 @@
 const {title, url, pubDate} = Astro.props;
 ---
 <li>
-    <p class="post-date" style="margin-bottom: 0.2em;">{new Date(pubDate).toLocaleString("en", { dateStyle: "long" })}</p>
+    <h1 style="margin-top: 0.5em; margin-bottom: 0.5em"><a href={url}>{title}</a></h1>
     <hr />
-    <h1><a href={url}>{title}</a></h1>
+    <h5 style="text-transform: uppercase; color:#d52bd3">The (Lost) Princess Diaries</h5>
+    <p class="post-date" style="margin-block-start: 0; margin-block-end: 0.5em; color:#7a6796">{new Date(pubDate).toLocaleString("en", { dateStyle: "long" })}</p>
+    <hr />
 </li>
